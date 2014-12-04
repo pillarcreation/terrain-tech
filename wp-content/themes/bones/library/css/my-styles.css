@@ -2606,29 +2606,31 @@ be set to display none.
 ul.menubar {
   background: white;
   list-style: none;
-  padding: 0 10px;
+  padding: 0px 10px 0 10px;
+  margin-top: 70px;
   height: 40px;
   padding-bottom: 30px;
-  float: right;
+  float: left;
+  border-top: 1px solid #e2e3e2;
 }
-/* line 157, ../scss/my-styles.scss */
+/* line 159, ../scss/my-styles.scss */
 ul.menubar > li {
   display: inline-block;
   position: relative;
 }
-/* line 161, ../scss/my-styles.scss */
+/* line 163, ../scss/my-styles.scss */
 ul.menubar > li > a {
   color: black;
   display: block;
   padding: 10px 14px;
   text-decoration: none;
 }
-/* line 167, ../scss/my-styles.scss */
+/* line 169, ../scss/my-styles.scss */
 ul.menubar > li > a:hover {
-  background: #29a7f5;
-  color: white;
+  background: #f6f6f6;
+  color: #555;
 }
-/* line 170, ../scss/my-styles.scss */
+/* line 172, ../scss/my-styles.scss */
 ul.menubar > li > ul {
   display: none;
   position: absolute;
@@ -2636,24 +2638,29 @@ ul.menubar > li > ul {
   background: white;
   padding: 10px 0;
 }
-/* line 177, ../scss/my-styles.scss */
+/* line 179, ../scss/my-styles.scss */
 ul.menubar > li > ul > li > a {
   color: black;
   display: block;
   padding: 8px 20px;
   text-decoration: none;
 }
-/* line 183, ../scss/my-styles.scss */
+/* line 185, ../scss/my-styles.scss */
 ul.menubar > li > ul > li > a:hover {
   background: #29a7f5;
   color: white;
 }
-/* line 188, ../scss/my-styles.scss */
+/* line 190, ../scss/my-styles.scss */
 ul.menubar > li.is-selected > a {
   background: #29a7f5;
   color: white;
 }
-/* line 189, ../scss/my-styles.scss */
+/* line 191, ../scss/my-styles.scss */
 ul.menubar > li.is-selected > ul {
   display: block;
+}
+
+/* line 198, ../scss/my-styles.scss */
+#MyLogo {
+  float: left;
 }

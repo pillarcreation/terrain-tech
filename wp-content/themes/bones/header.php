@@ -55,36 +55,41 @@
 
 					<?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>
 						<a href="<?php echo home_url(); ?>" rel="nofollow"><img id="MyLogo" src="http://terraintechnicalservices.ca/wp-content/uploads/terrain-technical-services-logo.png" /></a>
-						<ul class="menubar">
-  <li>
-    <a href="#">File</a>
-    <ul>
-      <li><a href="#">Open</a></li>
-      <li><a href="#">Save</a></li>
-      <li><a href="#">Save as&#8230;</a></li>
-      <li><a href="#">Close</a></li>
-      <li class="separator"></li>
-      <li><a href="#">Exit</a></li>
-    </ul>
-  </li>
-  <li>
-    <a href="#">Edit</a>
-    <ul>
-      <li><a href="#">Cut</a></li>
-      <li><a href="#">Copy</a></li>
-      <li><a href="#">Paste</a></li>
-    </ul>
-  </li>
-  <li>
-    <a href="#">Help</a>
-    <ul>
-      <li><a href="#">About</a></li>
-    </ul>
-  </li>
-</ul>
-
+				
 					<?php // if you'd like to use the site description you can un-comment it below ?>
 					<?php // bloginfo('description'); ?>
+
+					<?php function register_my_menu() {
+  register_nav_menu('header-menu',__( 'Header Menu' ));
+}
+add_action( 'init', 'register_my_menu' ); ?>
+
+<?php 
+
+function register_my_menus() {
+  register_nav_menus(
+    array(
+      'menubar' => __( 'Header Menu' ),
+      'extra-menu' => __( 'Extra Menu' )
+    )
+  );
+}
+add_action( 'init', 'register_my_menus' );
+
+?>
+
+
+
+
+<?php wp_nav_menu( array( 
+
+    'menu_class' => 'menubar',
+    'items_wrap' => '<ul id="%1$s" class="menubar">%3$s</ul>'
+
+
+ ) );
+
+ ?>
 
                                  
 

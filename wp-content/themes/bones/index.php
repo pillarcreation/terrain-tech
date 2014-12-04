@@ -1,3 +1,9 @@
+
+
+
+<?php include('header-content.php'); ?>
+
+
 <?php get_header(); ?>
 
 			<div id="content">
