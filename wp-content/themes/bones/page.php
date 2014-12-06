@@ -1,8 +1,25 @@
+
+
 <?php get_header(); ?>
+
 
 			<div id="content">
 
+
 				<div id="inner-content" class="wrap cf">
+
+				<div id="widgetized-content">
+
+	<?php if (function_exists('dynamic_sidebar') && dynamic_sidebar('content-slide')) : else : ?>
+
+	<div class="pre-widget">
+		<p><strong>Widgetized Header</strong></p>
+		<p>This panel is active and ready for you to add some widgets via the WP Admin</p>
+	</div>
+
+	<?php endif; ?>
+
+</div>
 
 						<main id="main" class="m-all t-2of3 d-5of7 cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 

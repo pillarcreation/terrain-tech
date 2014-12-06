@@ -47,25 +47,42 @@
 
 		<div id="container">
 
-			<header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
+    
 
+			<header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
+<div id="widgetized-content">
+
+  <?php if (function_exists('dynamic_sidebar') && dynamic_sidebar('second-header')) : else : ?>
+
+  <div class="pre-widget">
+    <p><strong>Widgetized Header</strong></p>
+    <p>This panel is active and ready for you to add some widgets via the WP Admin</p>
+  </div>
+
+  <?php endif; ?>
+
+</div>
 
 
 				<div id="inner-header" class="wrap cf">
 
-					<?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>
-						<a href="<?php echo home_url(); ?>" rel="nofollow"><img id="MyLogo" src="http://terraintechnicalservices.ca/wp-content/uploads/terrain-technical-services-logo.png" /></a>
+					<a href="<?php echo home_url(); ?>" rel="nofollow"><img id="MyLogo" src="http://terraintechnicalservices.ca/wp-content/uploads/terrain-technical-services-logo.png" /></a>
 				
 					<?php // if you'd like to use the site description you can un-comment it below ?>
-					<?php // bloginfo('description'); ?>
+					<?php // bloginfo('description'); ?>  
 
 					<?php function register_my_menu() {
   register_nav_menu('header-menu',__( 'Header Menu' ));
 }
 add_action( 'init', 'register_my_menu' ); ?>
 
-<?php 
 
+
+
+
+
+
+<?php
 function register_my_menus() {
   register_nav_menus(
     array(

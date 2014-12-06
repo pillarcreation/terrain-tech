@@ -2612,25 +2612,28 @@ ul.menubar {
   padding-bottom: 30px;
   float: left;
   border-top: 1px solid #e2e3e2;
+  font-family: bignoodletitling;
+  font-size: 18px;
+  font-weight: 500;
 }
-/* line 159, ../scss/my-styles.scss */
+/* line 162, ../scss/my-styles.scss */
 ul.menubar > li {
   display: inline-block;
   position: relative;
 }
-/* line 163, ../scss/my-styles.scss */
+/* line 166, ../scss/my-styles.scss */
 ul.menubar > li > a {
   color: black;
   display: block;
   padding: 10px 14px;
   text-decoration: none;
 }
-/* line 169, ../scss/my-styles.scss */
+/* line 172, ../scss/my-styles.scss */
 ul.menubar > li > a:hover {
   background: #f6f6f6;
-  color: #555;
+  color: #616161;
 }
-/* line 172, ../scss/my-styles.scss */
+/* line 175, ../scss/my-styles.scss */
 ul.menubar > li > ul {
   display: none;
   position: absolute;
@@ -2638,29 +2641,120 @@ ul.menubar > li > ul {
   background: white;
   padding: 10px 0;
 }
-/* line 179, ../scss/my-styles.scss */
+/* line 182, ../scss/my-styles.scss */
 ul.menubar > li > ul > li > a {
   color: black;
   display: block;
   padding: 8px 20px;
   text-decoration: none;
 }
-/* line 185, ../scss/my-styles.scss */
+/* line 188, ../scss/my-styles.scss */
 ul.menubar > li > ul > li > a:hover {
-  background: #29a7f5;
-  color: white;
+  background: #f6f6f6;
+  color: #616161;
 }
-/* line 190, ../scss/my-styles.scss */
+/* line 193, ../scss/my-styles.scss */
 ul.menubar > li.is-selected > a {
-  background: #29a7f5;
-  color: white;
+  background: #f6f6f6;
+  color: #616161;
 }
-/* line 191, ../scss/my-styles.scss */
+/* line 194, ../scss/my-styles.scss */
 ul.menubar > li.is-selected > ul {
   display: block;
 }
 
-/* line 198, ../scss/my-styles.scss */
+/* line 200, ../scss/my-styles.scss */
+body {
+  background: url("http://terraintechnicalservices.ca/wp-content/uploads/pattern61.png");
+}
+
+/* line 206, ../scss/my-styles.scss */
 #MyLogo {
   float: left;
+  padding-bottom: 10px;
+}
+
+/* line 211, ../scss/my-styles.scss */
+.second-header-text {
+  height: 20px;
+  width: 245px;
+  min-width: 245px;
+  display: inline;
+  padding-right: 10px;
+}
+
+/* line 215, ../scss/my-styles.scss */
+/* line 215, ../scss/my-styles.scss */
+/* line 222, ../scss/my-styles.scss */
+.second-header-text-two {
+  border-left: 1px solid #e2e3e2;
+  height: 20px;
+  width: 245px;
+  min-width: 245px;
+  display: inline;
+  padding-left: 10px;
+  margin-right: 20px;
+}
+
+/* line 233, ../scss/my-styles.scss */
+.header-wrapper {
+  text-align: right;
+  background: #f6f6f6;
+  color: #999;
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 55px;
+  opacity: 1;
+  z-index: 33;
+  padding-top: 15px;
+  border-bottom: 1px solid #e2e3e2;
+  min-width: 425px;
+}
+
+/* line 251, ../scss/my-styles.scss */
+#text-3 {
+  margin: 0 !important;
+}
+
+/* line 255, ../scss/my-styles.scss */
+.header {
+  margin-top: 0px !important;
+}
+
+/* line 260, ../scss/my-styles.scss */
+#inner-header {
+  padding-top: 17px;
+  padding-bottom: 30px;
+}
+
+/* line 258, ../scss/my-styles.scss */
+/* line 266, ../scss/my-styles.scss */
+#acx_slideshow_widget-3 {
+  padding-top: 47px;
+}
+
+/* line 270, ../scss/my-styles.scss */
+#container .header #widgetized-content .widget {
+  padding: 0;
+}
+
+/* line 267, ../scss/my-styles.scss */
+/* line 278, ../scss/my-styles.scss */
+#container #content #inner-content #widgetized-content #acx_slideshow_widget-3 img {
+  border-top: 4px solid #e2e3e2 !important;
+  border-bottom: 4px solid #e2e3e2 !important;
+  border-left: 4px solid #e2e3e2 !important;
+  border-right: 4px solid #e2e3e2 !important;
+}
+
+/* line 285, ../scss/my-styles.scss */
+.acx_ppt li img {
+  border-top: 3px solid #000;
+}
+
+/* line 291, ../scss/my-styles.scss */
+#click-menu.admin-bar-showing {
+  margin-top: 100px !important;
 }

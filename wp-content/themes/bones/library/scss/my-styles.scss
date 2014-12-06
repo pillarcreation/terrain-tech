@@ -155,6 +155,9 @@ ul.menubar {
   padding-bottom: 30px;
   float: left;
   border-top: 1px solid #e2e3e2;
+  font-family: bignoodletitling;
+  font-size: 18px;
+  font-weight: 500;
 
   > li {
     display: inline-block;
@@ -166,7 +169,7 @@ ul.menubar {
       padding: 10px 14px;
       text-decoration: none;
 
-      &:hover { background: #f6f6f6; color: #555; }
+      &:hover { background: #f6f6f6; color: #616161; }
     }
 
     > ul {
@@ -182,20 +185,111 @@ ul.menubar {
         padding: 8px 20px;
         text-decoration: none;
 
-        &:hover { background: #29a7f5; color: white; }
+        &:hover { background: #f6f6f6; color: #616161; }
       }
     }
 
     &.is-selected {
-      > a { background: #29a7f5; color: white; }
+      > a { background: #f6f6f6; color: #616161; }
       > ul { display: block; }
     }
   }
 }
 
 
+body {
+
+  background: url('http://terraintechnicalservices.ca/wp-content/uploads/pattern61.png');
+}
+
 
 #MyLogo {
   float: left;
+  padding-bottom: 10px;
 }
+
+.second-header-text {
+  height: 20px;
+  width: 245px;
+  min-width: 245px;
+  display: inline;
+  padding-right: 10px;
+  
+}
+
+/* line 215, ../scss/my-styles.scss */
+/* line 215, ../scss/my-styles.scss */
+.second-header-text-two {
+  border-left: 1px solid #e2e3e2;
+  height: 20px;
+  width: 245px;
+  min-width: 245px;
+  display: inline;
+  padding-left: 10px;
+  margin-right: 20px
+
+}
+
+.header-wrapper {
+text-align: right;
+background: #f6f6f6;
+color: #999;
+width: 100%;
+position: relative;
+top: 0;
+left: 0;
+height: 55px;
+opacity: 1;
+z-index: 33;
+padding-top: 15px;
+border-bottom: 1px solid #e2e3e2;
+min-width: 425px;
+
+
+}
+
+#text-3 {
+  margin: 0 !important;
+}
+
+.header {
+
+  margin-top: 0px !important;
+}
+
+#inner-header {
+  padding-top: 17px;
+  padding-bottom: 30px;
+}
+
+/* line 258, ../scss/my-styles.scss */
+#acx_slideshow_widget-3 {
+  padding-top: 47px;
+}
+
+#container .header #widgetized-content .widget {
+  padding: 0;
+}
+
+$border-slide: 4px;
+
+
+/* line 267, ../scss/my-styles.scss */
+#container #content #inner-content #widgetized-content #acx_slideshow_widget-3 img {
+  border-top: $border-slide solid #e2e3e2 !important;
+  border-bottom: $border-slide solid #e2e3e2 !important;
+  border-left: $border-slide solid #e2e3e2 !important;
+  border-right: $border-slide solid #e2e3e2 !important;
+}
+
+.acx_ppt li img {
+
+border-top: 3px solid #000;
+
+}
+
+#click-menu.admin-bar-showing {
+  margin-top: 100px !important;
+}
+
 
