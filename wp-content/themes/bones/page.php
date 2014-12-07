@@ -1,14 +1,14 @@
 
 
-<?php get_header(); ?>
 
+<?php get_header(); ?>
 
 			<div id="content">
 
 
 				<div id="inner-content" class="wrap cf">
 
-				<div id="widgetized-content">
+				<div id="widgetized-content-slide">
 
 	<?php if (function_exists('dynamic_sidebar') && dynamic_sidebar('content-slide')) : else : ?>
 

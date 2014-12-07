@@ -196,6 +196,10 @@ ul.menubar {
   }
 }
 
+#container {
+
+  margin: 0 auto;
+}
 
 body {
 
@@ -206,6 +210,8 @@ body {
 #MyLogo {
   float: left;
   padding-bottom: 10px;
+  padding-left: 39px;
+
 }
 
 .second-header-text {
@@ -217,6 +223,16 @@ body {
   
 }
 
+
+.second-header-social {
+  height: 20px;
+  
+  min-width: 150px;
+  display: inline;
+  padding-right: 10px;
+  float: left;
+  
+}
 /* line 215, ../scss/my-styles.scss */
 /* line 215, ../scss/my-styles.scss */
 .second-header-text-two {
@@ -255,31 +271,47 @@ min-width: 425px;
 .header {
 
   margin-top: 0px !important;
+  height: 200px;
+  margin: 0 auto !important;
+}
+
+.widget {
+
+  padding: 0;
 }
 
 #inner-header {
   padding-top: 17px;
   padding-bottom: 30px;
+
 }
 
 /* line 258, ../scss/my-styles.scss */
 #acx_slideshow_widget-3 {
-  padding-top: 47px;
+  padding-top: 0px;
+  margin-top: 0px;
 }
 
 #container .header #widgetized-content .widget {
   padding: 0;
+
 }
 
-$border-slide: 4px;
+#widgetized-content-slide {
+  width: 100%;
+  height: 100%;
+}
+
+
+$border-slide: 2px;
 
 
 /* line 267, ../scss/my-styles.scss */
-#container #content #inner-content #widgetized-content #acx_slideshow_widget-3 img {
+.wrap #content .acx_ppt li img {
   border-top: $border-slide solid #e2e3e2 !important;
   border-bottom: $border-slide solid #e2e3e2 !important;
-  border-left: $border-slide solid #e2e3e2 !important;
-  border-right: $border-slide solid #e2e3e2 !important;
+  height: 100%;
+ 
 }
 
 .acx_ppt li img {
@@ -290,6 +322,12 @@ border-top: 3px solid #000;
 
 #click-menu.admin-bar-showing {
   margin-top: 100px !important;
+}
+
+#inner-content {
+
+  background: #FFF;
+  
 }
 
 
